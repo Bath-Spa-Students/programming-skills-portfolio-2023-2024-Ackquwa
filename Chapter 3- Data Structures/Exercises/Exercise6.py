@@ -1,10 +1,10 @@
-invitees = ['guido van rossum', 'jack turner', 'lynn hill']
+invitees = ['Karam Farhat', 'Elias Ahmed', 'Abdullah Alfalasi']
 
 for invitee in invitees:
     print(f"{invitee.title()}, you are invited to dinner.")
 
 print(f"\nSorry, {invitees[1].title()} can't make it to dinner.")
-invitees[1] = 'gary snyder'
+invitees[1] = 'Elias Ahmed'
 
 
 for invitee in invitees:
@@ -12,7 +12,7 @@ for invitee in invitees:
 
 
 print("\nWe have a larger table!")
-additional_guests = ['frida kahlo', 'reinhold messner', 'elizabeth peratrovich']
+additional_guests = ['Baron Salcedo', 'Rainer Braun', 'Kevin Leonardo']
 invitees = [additional_guests[0]] + [invitees[0]] + [additional_guests[1]] + [invitees[1]] + [invitees[2]] + [additional_guests[2]]
 
 
