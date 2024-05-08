@@ -1,15 +1,15 @@
 def show_items():
     print ("Welcome to the Vending Machine!")
     
-    print ("1.Flamin' Hot Cheetos - 3 DHS")
-    print ("2.Pepsi- 2.50 DHS")
-    print ("3.Sprite- 2 DHS")
-    print ("4.Mirinda- 2 DHS")
-    print ("5.Mr.Krisps- 1.50 DHS")
-    print ("6.Super Ring- 1 DHS")
-    print ("7.Salad- 2 DHS")
-    print ("8.Bugles- 17 DHS")
-    print ("9.Exit")
+    print ("1. Flamin' Hot Cheetos - 4 DHS")
+    print ("2. Mountain Dew - 2 DHS")
+    print ("3. Sprite - 2 DHS")
+    print ("4. Chocolate Biscuit - 1.75 DHS")
+    print ("5. Ice Cream Sandwich - 2.50 DHS")
+    print ("6. Maltesers - 3.50 DHS")
+    print ("7. Lays Chips - 2 DHS")
+    print ("8. Water - 2 DHS")
+    print ("9. Exit")
 
 def get_choice():
     selection = int (input ("Enter the Number of your Selection: "))
@@ -42,11 +42,11 @@ def get_choice():
         return "Exit"
     
     else:
-        print ("Invalid selection. please try again.")
+        print ("Invalid Selection. Please Try Again.")
         return get_choice ()
 
 def handle_payment (product):
-    print ("selected item:", product)
+    print ("Item Selected: ", product)
     
     amount = float (input ("Insert Money: "))
     
@@ -69,10 +69,10 @@ def handle_payment (product):
     
     if amount >= cost:
         balance = amount-cost
-        print ("payment successful!here's your change: ", balance , "DHS")
+        print ("Payment Approved | Change Returned: ", balance , "DHS")
     
     else:
-        print ("Insufficient payment.please try again.")
+        print ("Insufficient Money. Please Try Again.")
         handle_payment (product)
 
 def start_vending_machine():
@@ -81,7 +81,7 @@ def start_vending_machine():
         product = get_choice()
         
         if product == "Exit":
-            print ("Thank you for using the Vending Machine!")
+            print ("Thank you for using the Vending Machine")
             
             break
         
